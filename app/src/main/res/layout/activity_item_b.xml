@@ -13,8 +13,8 @@
         android:ems="12"
         android:inputType="none"
         android:focusable="false"
-        android:clickable="false"
         android:longClickable="false"
+        android:clickable="false"
         android:text="" />
 
     <Button
