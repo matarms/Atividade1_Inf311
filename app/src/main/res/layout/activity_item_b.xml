@@ -1,0 +1,194 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".ActivityItemB">
+
+    <EditText
+        android:id="@+id/editTextform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="12"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextform"
+        android:onClick="insertChar"
+        android:tag="7"
+        android:text="7" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextform"
+        android:layout_toRightOf="@id/button7"
+        android:onClick="insertChar"
+        android:tag="8"
+        android:text="8" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextform"
+        android:layout_toRightOf="@id/button8"
+        android:onClick="insertChar"
+        android:tag="9"
+        android:text="9" />
+
+    <Button
+        android:id="@+id/buttondivi"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextform"
+        android:layout_toRightOf="@id/button9"
+        android:onClick="insertChar"
+        android:tag="/"
+        android:text="/" />
+
+    <Button
+        android:id="@+id/buttonback"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextform"
+        android:layout_toRightOf="@id/buttondivi"
+        android:onClick="backText"
+        android:tag="back"
+        android:text="@string/back" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:onClick="insertChar"
+        android:tag="4"
+        android:text="4" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:layout_toRightOf="@id/button4"
+        android:onClick="insertChar"
+        android:tag="5"
+        android:text="5" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:layout_toRightOf="@id/button5"
+        android:onClick="insertChar"
+        android:tag="6"
+        android:text="6" />
+
+    <Button
+        android:id="@+id/buttonmult"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:layout_toRightOf="@id/button6"
+        android:onClick="insertChar"
+        android:tag="*"
+        android:text="X" />
+
+    <Button
+        android:id="@+id/buttonera"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button7"
+        android:layout_toRightOf="@id/buttonmult"
+        android:onClick="eraseText"
+        android:tag="C"
+        android:text="C" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button5"
+        android:onClick="insertChar"
+        android:tag="1"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:layout_toRightOf="@id/button1"
+        android:onClick="insertChar"
+        android:tag="2"
+        android:text="2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:layout_toRightOf="@id/button2"
+        android:onClick="insertChar"
+        android:tag="3"
+        android:text="3" />
+
+    <Button
+        android:id="@+id/buttonminus"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button4"
+        android:layout_toRightOf="@id/button3"
+        android:onClick="insertChar"
+        android:tag="-"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/buttonresu"
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/button4"
+        android:layout_toRightOf="@id/buttonminus"
+        android:onClick="calcule"
+        android:tag="="
+        android:text="=" />
+
+    <Button
+        android:id="@+id/button0"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:onClick="insertChar"
+        android:tag="0"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/buttondot"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_toRightOf="@id/button0"
+        android:onClick="insertChar"
+        android:tag="."
+        android:text="." />
+    <Button
+        android:id="@+id/buttonsum"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button1"
+        android:layout_toRightOf="@id/buttondot"
+        android:onClick="insertChar"
+        android:tag="+"
+        android:text="+" />
+
+
+</RelativeLayout>
+
